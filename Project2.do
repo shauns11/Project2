@@ -36,28 +36,29 @@ cd "C:/Git/Project2"
 **Git GUI:
 **Check main branch is called main.
 **Rescan.
+**Stage files.
+**Commit (Commit2)
+**Push to remote.
 
 
-
-
-!git status           // local changes now staged.
-!git add --all
-!git commit -m "Commit 1" 
-!git push -u origin main
-
-
-
-
-
-
-******************************
-*make more changes locally.
-******************************
+##make more changes locally.
 
 !echo This is the 3rd line >> "./one.txt"
 !echo This is the 3rd line >> "./two.txt"
 !echo This is the 3rd line >> "./myFolder/three.txt"
 !echo This is the 4th line >> "./myFolder/three.txt"
+
+
+**Git GUI:
+**Rescan.
+**Stage files.
+**Commit (Commit3)
+**Push to remote.
+
+
+
+
+
 
 *staged->commit->push to remote.
 !git add --all
