@@ -56,22 +56,32 @@ cd "C:/Git/Project2"
 **Push to remote.
 
 
-
-
-
-
-*staged->commit->push to remote.
-!git add --all
-!git commit -m "Commit 2" 
-!git push -u origin main
-
 *add README.md
-!echo # Project1 >> "./README.md"
+!echo # Project2 >> "./README.md"
+
+**Git GUI:
+**Rescan.
+**Stage files.
+**Commit (Commit4)
+**Push to remote.
+
+
+
+
+
+
+
 !git add "./README.md" 
 !git commit -m "Commit 3"
 !git push -u origin main
 !git status
 !git log
+
+
+
+
+
+
 
 erase "./README.md"
 !git add --all
