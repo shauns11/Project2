@@ -73,25 +73,33 @@ erase "./README.md"
 **Commit (Commit5)
 **Push to remote.
 
+**Check GitHub: README.md now deleted from remote.
 
 
 
-
-
-
-
-!git add --all
-!git commit -m "Commit 4" 
-!git push -u origin main // README.md now deleted from remote.
-
-*Locally: create a branch
-!git branch dev
-!git switch dev
+*Git GUI: Locally: create a branch (dev).
+*Changes in this branch.
 !type nul > "./onea.txt"
 !echo This is the 1st line >> "./onea.txt"
 !echo This is the 2nd line >> "./onea.txt"
-!git add "./onea.txt"
-!git commit -m "Commit 5:file in dev branch" 
+
+**Git GUI:
+**Rescan.
+**Stage files.
+**Commit (Commit6) but do not push.
+
+**Commit do-file before merge (Commit7).
+
+**Git GUI:
+**check out to main.
+**merge dev to main. (local merge)
+
+
+
+
+
+
+
 
 *Merge to main and push to remote.
 !git switch main                              
