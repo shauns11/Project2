@@ -88,18 +88,26 @@ erase "./README.md"
 **Stage files.
 **Commit (Commit6) but do not push.
 
+<<<<<<< HEAD
 **Commit do-file before merge (Commit7).
 
 **Git GUI:
 **check out to main.
 **merge dev to main. (local merge)
 
+=======
+>>>>>>> 5b8ccbc57fc36902be7cc6320403b156a93c0670
 
 
 
 
 
 
+<<<<<<< HEAD
+=======
+!git add "./onea.txt"
+!git commit -m "Commit 5:file in dev branch" 
+>>>>>>> 5b8ccbc57fc36902be7cc6320403b156a93c0670
 
 *Merge to main and push to remote.
 !git switch main                              
