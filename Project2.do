@@ -65,25 +65,21 @@ cd "C:/Git/Project2"
 **Commit (Commit4)
 **Push to remote.
 
-
-
-
-
-
-
-!git add "./README.md" 
-!git commit -m "Commit 3"
-!git push -u origin main
-!git status
-!git log
-
-
-
-
-
-
-
 erase "./README.md"
+
+**Git GUI:
+**Rescan.
+**Stage files.
+**Commit (Commit5)
+**Push to remote.
+
+
+
+
+
+
+
+
 !git add --all
 !git commit -m "Commit 4" 
 !git push -u origin main // README.md now deleted from remote.
