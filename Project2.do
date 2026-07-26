@@ -2,18 +2,134 @@
 !git config --global user.email "s.scholes@ucl.ac.uk"
 !git --version
 
-********************************************************************************
-*Two files put in remote repository.
-*https://github.com/shauns11/Project5.git
-clone to "C:/Git/Project2" 
-How: Git GUI:
-1. Source location = remote repository.
-2. Clone to "C:/Git/MyProjects/Project5" ....make sure folder does not exist
-********************************************************************************
+*GUI GUI using Windows Surface Pro.
+*This do-file put into *https://github.com/shauns11/Project2.git
 
-*Project5.
-cd "C:/Git/MyProjects/Project5" 
+
+**clone to "C:/Git/Project2" 
+**Git GUI:
+*1. Source location = remote repository.
+*2. Clone to C:/Git/Project2 ....make sure folder (Project2) does not exist.
+
+******************************
+*Now edit Project2.do locally.
+******************************
+
+cd "C:/Git/Project2" 
 !git status
+
+!type nul > "./one.txt"
+!type nul > "./two.txt"
+!echo This is the 1st line >> "one.txt"
+!echo This is the 2nd line >> "one.txt"
+!echo This is the 1st line >> "two.txt"
+!echo This is the 2nd line >> "two.txt"
+
+*create new folder.
+!mkdir "C:/Git/Project2/myFolder"
+cd "./myFolder"
+!type nul > "three.txt"
+!echo This is the 1st line >> "three.txt"
+!echo This is the 2nd line >> "three.txt"
+cd "C:/Git/Project2" 
+
+**Git GUI:
+**Check main branch is called main.
+**Rescan.
+
+
+
+
+!git status           // local changes now staged.
+!git add --all
+!git commit -m "Commit 1" 
+!git push -u origin main
+
+
+
+
+
+
+******************************
+*make more changes locally.
+******************************
+
+!echo This is the 3rd line >> "./one.txt"
+!echo This is the 3rd line >> "./two.txt"
+!echo This is the 3rd line >> "./myFolder/three.txt"
+!echo This is the 4th line >> "./myFolder/three.txt"
+
+*staged->commit->push to remote.
+!git add --all
+!git commit -m "Commit 2" 
+!git push -u origin main
+
+*add README.md
+!echo # Project1 >> "./README.md"
+!git add "./README.md" 
+!git commit -m "Commit 3"
+!git push -u origin main
+!git status
+!git log
+
+erase "./README.md"
+!git add --all
+!git commit -m "Commit 4" 
+!git push -u origin main // README.md now deleted from remote.
+
+*Locally: create a branch
+!git branch dev
+!git switch dev
+!type nul > "./onea.txt"
+!echo This is the 1st line >> "./onea.txt"
+!echo This is the 2nd line >> "./onea.txt"
+!git add "./onea.txt"
+!git commit -m "Commit 5:file in dev branch" 
+
+*Merge to main and push to remote.
+!git switch main                              
+!git merge dev                                
+!git push -u origin main                      
+!git log
+!git show
+
+di "finished"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 *Add text to files.
 !echo This is the 2nd line >> "one.txt"
