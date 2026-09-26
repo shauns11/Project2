@@ -110,7 +110,7 @@ erase "C:/Users/sscho/OneDrive/Desktop/Project2.do"
 **Git GUI:
 **Rescan.
 **Stage files.
-**Commit (Commit5)
+**Commit (Commit7)
 **Push to remote.
 
 di "Project2.do finished"
